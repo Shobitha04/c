@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main()
+{
+int x = 500;
+string s = "minioning";
+char c = "d";
+printf("number:",%d);
+printf(""string:",%s);
+printf("charrr:",%c);
+float f = 9.533;
+printf("float:",%.1f);//prints upto 1 decimal
+}
