@@ -1,0 +1,39 @@
+We're trying to calculate the 5th Fibonacci number (fibonacci(5)).
+
+fibonacci(5) calls fibonacci(4) and fibonacci(3).
+fibonacci(4) calls fibonacci(3) and fibonacci(2).
+fibonacci(3) calls fibonacci(2) and fibonacci(1).
+fibonacci(2) returns 1 because it hits the base case (n <= 1).
+fibonacci(1) returns 1 because it hits the base case.
+So, fibonacci(3) returns fibonacci(2) + fibonacci(1), which is 1 + 1 = 2.
+fibonacci(4) calls fibonacci(3) (which we just calculated) and fibonacci(2).
+fibonacci(2) returns 1 (from the base case).
+So, fibonacci(4) returns fibonacci(3) + fibonacci(2), which is 2 + 1 = 3.
+Now, fibonacci(5) calls fibonacci(4) and fibonacci(3) (which we've already calculated).
+fibonacci(4) returns 3.
+fibonacci(3) returns 2.
+So, fibonacci(5) returns fibonacci(4) + fibonacci(3), which is 3 + 2 = 5.
+#include<stdio.h>
+
+int fibonacci(int n)
+{
+if(n<=1){
+return n;
+}else{
+return fibonacci(n-1) + fibonacci(n-2);
+}
+}
+
+int main(int n)
+{
+printf("enter number of terms");
+scanf("%d",&n);
+
+printf("fibonacci series upto %d terms:",n);
+
+for(int i=0;i<n;i++)//suppose there are 5 terms, prints from 0 upto 5th{
+    printf("%d",fibonacci(i));
+    }
+  printf("\n");
+  return 0;
+  }
