@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main()
+{
+  printf("single line comment ");
+  //comment
+  printf("multi line comment");
+  /*commenenenenennet*/
+}
