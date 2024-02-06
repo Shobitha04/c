@@ -3,7 +3,7 @@
 int main()
 {
   printf("single line comment ");
-  //comment
+  //comment single line
   printf("multi line comment");
   /*commenenenenennet*/
 }
